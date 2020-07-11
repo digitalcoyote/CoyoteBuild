@@ -2,11 +2,11 @@
   <PropertyGroup>
     <!-- <CoyoteBuild.SassExe Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">"$(MSBuildThisFileDirectory)/net46/CoyoteBuild.Sass.exe"</TsGenFileExe> -->
     <!-- <CoyoteBuild.SassExe Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp' OR '$(TargetFrameworkIdentifier)' == '.NETStandard'">dotnet "$(MSBuildThisFileDirectory)/netcoreapp3.1/CoyoteBuild.Sass.dll"</TsGenFileExe> -->
-    <CoyoteBuild.SassExe Condition="'$(OS)' == Unix">dotnet "$(MSBuildThisFileDirectory)../tools/netcoreapp3.1/CoyoteBuild.Sass.dll"</CoyoteBuild.SassExe>
-    <CoyoteBuild.SassExe Condition="'$(OS)' == 'Windows_NT'">dotnet "$(MSBuildThisFileDirectory)..\tools\netcoreapp3.1\CoyoteBuild.Sass.dll"</CoyoteBuild.SassExe>
+    <CoyoteBuildExe Condition="'$(OS)' == Unix">dotnet "$(MSBuildThisFileDirectory)../tools/netcoreapp3.1/CoyoteBuild.Sass.dll"</CoyoteBuildExe>
+    <CoyoteBuildExe Condition="'$(OS)' == 'Windows_NT'">dotnet "$(MSBuildThisFileDirectory)..\tools\netcoreapp3.1\CoyoteBuild.Sass.dll"</CoyoteBuildExe>
   </PropertyGroup>
   
   <Target Name="CoyoteBuild.Sass" AfterTargets="Build">
-    <Exec Command="$(CoyoteBuild.SassExe) &quot;$(MSBuildProjectFullPath)&quot; $(TargetFramework)" IgnoreExitCode="false" />
+    <Exec Command="$(CoyoteBuildExe) &quot;$(MSBuildProjectFullPath)&quot; $(MSBuildThisFileDirectory)" IgnoreExitCode="false" />
   </Target>
 </Project>

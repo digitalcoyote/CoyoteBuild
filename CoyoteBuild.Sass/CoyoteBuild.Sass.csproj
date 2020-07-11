@@ -11,6 +11,15 @@
         <LangVersion>8</LangVersion>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <BuildTasksExe Condition="'$(OS)' == Unix">"$(MSBuildProjectDirectory)/../BuildTasks/bin/$(Configuration)/netcoreapp3.1/BuildTasks.dll"</BuildTasksExe>
+        <BuildTasksExe Condition="'$(OS)' == 'Windows_NT'">"$(MSBuildProjectDirectory)\..\BuildTasks\bin\$(Configuration)\netcoreapp3.1\BuildTasks.dll"</BuildTasksExe>
+    </PropertyGroup>
+
+    <Target Name="UpdateSass" BeforeTargets="Build">
+        <Exec Command="dotnet $(BuildTasksExe) &quot;\bin\$(Configuration)\netcoreapp3.1\temp\&quot;" IgnoreExitCode="false" />
+    </Target>
+    
     <ItemGroup>
         <None Remove="CoyoteBuild.Sass.nuspec" />
         <Content Include="CoyoteBuild.Sass.nuspec" />

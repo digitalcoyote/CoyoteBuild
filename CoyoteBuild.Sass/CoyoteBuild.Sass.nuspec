@@ -4,8 +4,8 @@
     <id>CoyoteBuild.Sass</id>
     <title>CoyoteBuild.Sass</title>
     <version>0.0.0.1</version>
-    <authors></authors>
-    <owners></owners>
+    <authors>Curtis Carter</authors>
+    <owners>Curtis Carter</owners>
     <projectUrl>https://github.com/digitalcoyote/CoyoteBuild.Sass</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <summary>CoyoteBuild.Sass ~ Compiles all .scss and .sass files at build</summary>
