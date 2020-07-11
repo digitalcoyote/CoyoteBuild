@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoyoteBuild.Sass", "CoyoteBuild.Sass\CoyoteBuild.Sass.csproj", "{7791DF3A-802E-4EC9-B909-26EEFBA0CA4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildTasks", "BuildTasks\BuildTasks.csproj", "{74447618-1C98-4F75-9445-ADC9491CE886}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7791DF3A-802E-4EC9-B909-26EEFBA0CA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7791DF3A-802E-4EC9-B909-26EEFBA0CA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7791DF3A-802E-4EC9-B909-26EEFBA0CA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7791DF3A-802E-4EC9-B909-26EEFBA0CA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74447618-1C98-4F75-9445-ADC9491CE886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74447618-1C98-4F75-9445-ADC9491CE886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74447618-1C98-4F75-9445-ADC9491CE886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74447618-1C98-4F75-9445-ADC9491CE886}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

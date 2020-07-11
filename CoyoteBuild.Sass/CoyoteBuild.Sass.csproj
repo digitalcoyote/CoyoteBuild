@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <GeneratePackageOnBuild Condition="'$(Configuration)'=='RELEASE'">true</GeneratePackageOnBuild>
+        <Title>CoyoteBuild.Sass</Title>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageId>CoyoteBuild.Sass</PackageId>
+        <NuspecFile>CoyoteBuild.Sass.nuspec</NuspecFile>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="CoyoteBuild.Sass.nuspec" />
+        <Content Include="CoyoteBuild.Sass.nuspec" />
+    </ItemGroup>
+</Project>
